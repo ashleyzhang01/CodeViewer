@@ -1,13 +1,9 @@
 import SwiftUI
 import WebKit
 
-#if os(OSX)
-    import AppKit
-    public typealias ViewRepresentable = NSViewRepresentable
-#elseif os(iOS)
-    import UIKit
-    public typealias ViewRepresentable = UIViewRepresentable
-#endif
+
+import UIKit
+public typealias ViewRepresentable = UIViewRepresentable
 
 
 public struct CodeViewer: ViewRepresentable {

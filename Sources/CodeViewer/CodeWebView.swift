@@ -8,13 +8,8 @@
 
 import WebKit
 
-#if os(OSX)
-    import AppKit
-    public typealias CustomView = NSView
-#elseif os(iOS)
-    import UIKit
-    public typealias CustomView = UIView
-#endif
+import UIKit
+public typealias CustomView = UIView
  
 // MARK: JavascriptFunction
 
